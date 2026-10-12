@@ -9,6 +9,7 @@ import Attendance from './pages/Attendance'
 import Reports from './pages/Reports'
 import AdminRooms from './pages/AdminRooms'
 import AdminStudents from './pages/AdminStudents'
+import Student from './pages/Student'
 
 
 function LoadingScreen() {
@@ -37,11 +38,8 @@ function Dashboard({ profile }) {
       <h2>Welcome, {profile.full_name}!</h2>
       <p>Role: {roleNames[profile.role]}</p>
 
-      {profile.role === 'student' && (
-        <p>Your Student dashboard is ready. Exam allocations will appear
-          here when that module is connected.</p>
-      )}
-
+      
+      {profile.role === 'student' && <Student />}
       {profile.role === 'in_charge' && (
         <p>Your assigned rooms and attendance tools will appear here
           when that module is connected.</p>
