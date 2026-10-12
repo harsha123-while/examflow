@@ -1,0 +1,50 @@
+.admin {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: sans-serif;
+  text-align: left;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin: 20px 0 32px;
+}
+
+.card {
+  background: #f3f4f6;
+  color: #111;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-value {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-label {
+  margin: 4px 0 0;
+  color: #555;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #e5e7eb;
+  color: #111;
+}
