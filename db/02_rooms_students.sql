@@ -1,4 +1,3 @@
--- ROOMS
 create table if not exists public.rooms (
   id serial primary key,
   name text not null unique,
@@ -7,7 +6,6 @@ create table if not exists public.rooms (
   active boolean not null default true
 );
 
--- STUDENTS
 create table if not exists public.students (
   id serial primary key,
   roll_no text not null unique,
